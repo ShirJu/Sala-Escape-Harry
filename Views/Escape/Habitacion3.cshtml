@@ -1,0 +1,29 @@
+<div class="text-center">
+  <h1>Sala 3</h1>
+<p> 
+    Harry logró salir de la cocina y llegó al salón pero debe descubrir la clave que abrirá la puerta.
+    Para ello tiene que escribir el nombre de la casa de Hogwarts de color rojo que se ve en el poster.
+</p>
+
+<img src="\imagenes\sala 3.jpg">
+
+<p>@ViewBag.Error</p>
+
+<form method="post" action='@Url.Action("Habitacion","Escape")'>
+
+  <input type="hidden" value="@Escape.EstadoJuego" name="sala">
+
+  <p> ¿Cual es la casa de Hogwarts del poster en el sector rojo?<br />
+
+  <input type="hidden" value="@Escape.EstadoJuego" name="sala">
+
+  <input type="text" name="clave" autocomplete="off" placeholder="Ingrese su elección" size="30">
+
+  </p>
+
+  <button type="submit" class="btn btn-success">VALIDAR</button>
+  
+
+<button onclick="alert( 'Recuerda! Las casas de Hogwarts son: Slytherin,Hufflepuff,Ravenclaw y Gryffindor ')" class="btn btn-warning"> Pista 1 </button>
+<button onclick="alert( ' Los pertenecientes a esta casa se destacan por su valentía ')" class="btn btn-warning"> Pista 2 </button>
+</form>

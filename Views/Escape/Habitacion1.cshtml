@@ -1,0 +1,23 @@
+<div class="text-center">
+  <h1>Sala 1</h1>
+<P> 
+Harry se encuentra encadenado a una silla en el sótano debajo de las escaleras, claramente no puede liberarse solo. Ayúdalo a encontrar la llave de sus esposas descubriendo el siguiente acertijo… 
+</p>
+
+<img src="\imagenes\sala 1 oka.jpg">
+ <P> @ViewBag.Error </p>
+<form method="post" action='@Url.Action("Habitacion","Escape")'>
+  <p> ¿En qué fecha fue publicado el libro de Harry Potter y la Piedra Filosofal?<br/>
+
+    <input type="hidden" value="@Escape.EstadoJuego" name="sala">
+    
+    <input type="date" name="clave" placeholder="Ingrese su elección" autocomplete="off" size="30">
+  </p>
+  <button type="submit" class="btn btn-success">VALIDAR</button>
+  <button onclick="alert('El mes y el día están escondidos en la imagen')" class="btn btn-warning"> Pista 1 </button>
+  <button onclick="alert('Conta la posición de las letras rojas en su respectivo renglón para descubrir el año')" class="btn btn-warning"> Pista 2 </button>
+  
+</form>
+
+
+</div>

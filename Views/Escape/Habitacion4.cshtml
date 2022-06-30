@@ -1,0 +1,28 @@
+<div class="text-center">
+  <h1>Sala 4</h1>
+<p> 
+    Genial, Harry logró salir de su casa y fuera se encontraba Hagrid el cual lo lleva hasta la entrada de la 
+    estación 9 3/4. Al entrar Hagrid lo deja por su cuenta, no sin antes avisarle que para finalmente ingresar
+    en esta estación magica, debe resolver un acertijo. 
+</p>
+
+<img src="\imagenes\sala 4.jpg">
+
+<p>@ViewBag.Error</p>
+
+<form method="post" action='@Url.Action("Habitacion","Escape")'>
+
+  <input type="hidden" value="@Escape.EstadoJuego" name="sala">
+
+  <p>¿Qué animal anda en cuatro patas por la mañana, en dos patas al mediodía y en tres durante la noche?<br />
+  <input type="hidden" value="@Escape.EstadoJuego" name="sala">
+
+  <input type="text" name="clave" autocomplete="off" placeholder="Ingrese su elección en minusculas" size="30">
+  </p>
+
+  <button type="submit" class="btn btn-success">VALIDAR</button>
+  <button onclick="alert( 'Pensalo metaforicamente, no es un animal')" class="btn btn-warning"> Pista 1 </button>
+   <button onclick="alert( 'Posee capacidad de razonamiento y conciencia ')" class="btn btn-warning"> Pista 2 </button>
+
+
+</form>

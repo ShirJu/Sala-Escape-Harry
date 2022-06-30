@@ -1,0 +1,21 @@
+<div class="text-center">
+  <h1>Sala 2</h1>
+<P > 
+    Bien hecho! Logramos ayudar a Harry, pero eso no es todo.
+    Harry salió a la cocina pero la puerta tiene una contraseña que debemos descubrir.
+    La contraseña es algo relacionado con la familia de su mejor amigo, Ron:
+</P > 
+<img src="\imagenes\sala 2.jpg">
+
+<p>@ViewBag.Error</p>
+<form method="post" action='@Url.Action("Habitacion","Escape")'>
+  <p> ¿Cuantos hermanos tiene Ron Weasley?<br />
+
+    <input type="hidden" value="@Escape.EstadoJuego" name="sala">
+
+    <input type="number" name="clave" autocomplete="off" placeholder="Ingrese su elección" size="30">
+  </p>
+  <button type="submit" class="btn btn-success">VALIDAR</button>
+  <button onclick="alert('Hay que descontar de la foto familiar a Ron, su mamá y su papá')" class="btn btn-warning"> Pista 1 </button>
+  <button onclick="alert('1986 / 1655 * 5')" class="btn btn-warning"> Pista 2 </button>
+</form>
